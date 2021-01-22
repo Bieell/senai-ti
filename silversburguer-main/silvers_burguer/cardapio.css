@@ -1,0 +1,680 @@
+* {
+    margin: 0px;
+    padding: 0;
+} 
+
+body {
+    margin: 0%;
+    background-color: white;
+}
+
+#tracado{
+    height: 20px;
+    background-color: black;
+    
+}
+
+/* ------------------------------------------- Footer ----------------------------------------- */
+#separadorcardapio {
+    width: 100%;
+    margin-bottom:-1%;
+    height: 80px;    
+}
+/* #nav_bar {
+    margin: 0%;
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-family: 'Montserrat';
+    background-color: black;
+}
+
+
+#nav_bar a:link, a:visited, a:active {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    }
+    
+#nav_bar a:hover {
+    margin: auto;
+    text-decoration: underline;  
+	color:white; 
+	font-size:140%; 
+    } */
+/* -------------------------------------- Footer end ------------------------------------------------ */
+
+
+
+
+/*-------------------------------- Opções do cardapio ----------------------------------- */
+#items{
+    position:relative;
+    float: right;
+    align-items: center;
+    height: 1000px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #A1A19F;  
+}
+
+#items a:link, a:visited, a:active {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+	}
+#items a:hover {
+    margin: auto;
+    text-decoration: underline;  
+	color:white; 
+	font-size:110%; 
+    }
+/* 
+#items a:link, a:visited, a:active {   
+    text-decoration: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#items a:hover {
+    margin: auto;
+    text-decoration: underline;  
+	color:white; 
+	font-size:100%; 
+    } */
+
+#cinza {  /* Div para deixar parte de baixo das opções cinza sem ter que mexer no space around */
+    position:relative;
+    float: right;
+    width: 50%;
+    background-color: #A1A19F;
+    height: 1400px;
+}
+
+#cinzabeb {  /* Div para deixar parte de baixo das opções cinza sem ter que mexer no space around */
+    position:relative;
+    float: right;
+    width:50%;
+    background-color: #A1A19F;
+    height:400px;
+}
+
+#cinzasobre {  /* Div para deixar parte de baixo das opções cinza sem ter que mexer no space around */
+    position:relative;
+    float: right;
+    width:50%;
+    background-color: #A1A19F;
+    height:140px;
+}
+
+#cinzaporcoes {  /* Div para deixar parte de baixo das opções cinza sem ter que mexer no space around */
+    position:relative;
+    float: right;
+    width:50%;
+    background-color: #A1A19F;
+    height:100px;
+}
+
+#cinzacomb {  /* Div para deixar parte de baixo das opções cinza sem ter que mexer no space around */
+    position:relative;
+    float: right;
+    width:50%;
+    background-color: #A1A19F;
+    height:50px;
+}
+
+button{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#lanches{
+    background-color: black;
+    border: 10px solid ;   
+}
+
+#bebidas{
+    background-color: black;
+    border: 10px solid;
+}
+
+#combos{
+    background-color: black;
+    border: 10px solid;
+}
+
+#cervejas{
+    background-color: black;
+    border: 10px solid;
+    
+
+}
+#porcoes{
+    background-color: black;
+    border: 10px solid;
+    
+
+}
+#sobremesas{
+    background-color: black;
+    border: 10px solid;
+}
+/*-------------------------------- Opções do cardapio end ----------------------------------- */
+
+
+
+
+
+/*--------------------------------------- Lanches -----------------------------------------*/
+/* Div principal dos produtos da esquerda */
+#produtos {
+    float: left;
+    width: 50%;
+    height: 2400px;
+    background-color: #141414;
+    font-family: "Fjalla One";
+}
+
+/* Lanche 1 (Mr.Calabresa) */
+#lanche1{
+    /* display: flex; */
+    margin-top: 1%;
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: blue; */
+    color: white;
+    /* background-color: blue; */
+    border-bottom: 2px solid black;
+} 
+
+#lanche1_title {
+    width: 130%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+    margin-bottom: 1%; 
+}
+
+#lanche1_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 2 (Big Black) */
+#lanche2{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: red; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche2_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+    margin-bottom: 1%;
+}
+
+#lanche2_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 3 (Chicken X) */
+#lanche3{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: green; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top:2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche3_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche3_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 4 (Mr. Grandão) */
+#lanche4{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche4_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+    margin-bottom:1%;
+}
+
+#lanche4_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 5 (ChickenCheese) */
+#lanche5{
+    text-align:left;
+    width: 100%;
+    height: 7%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche5_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche5_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 6 (Carne de Flango) */
+#lanche6{
+    text-align:left;
+    width: 100%;
+    height: 7%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche6_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche6_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 7 () */
+#lanche7{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche7_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche7_desc {
+    width: 100%;
+    /* background-color: blue; */
+    font-size: 18px;
+}
+
+/* Lanche 8 () */
+#lanche8{
+    text-align:left;
+    width: 100%;
+    height: 7%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche8_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche8_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 9 () */
+#lanche9{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche9_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche9_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+/* Lanche 10 () */
+#lanche10{
+    text-align:left;
+    width: 100%;
+    height: 6%;
+    /* background-color: yellow; */
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-bottom: 2px solid black;
+} 
+
+#lanche10_title {
+    width: 100%;
+    height: 35%;
+    /* background-color:  */
+    font-size: 20px;
+    color: red;
+}
+
+#lanche10_desc {
+    width: 100%;
+    /* background-color: ; */
+    font-size: 18px;
+}
+
+#ofertas {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: red;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: "Fjalla One"
+}
+
+#promobqt {
+    border-top: 2px solid black;
+}
+
+#promoprec {
+    border-bottom: 2px solid black;
+}
+
+/*----------------------------------------Lanches end --------------------------------------------*/
+
+
+
+
+/*--------------------------------- Bebidas ----------------------------------------------- */
+#produtosbeb {
+    font-family: "Fjalla One";
+    position:relative;
+    float: left;
+    justify-content: right;
+    display: flex;
+    width: 50%;
+    height: 1400px;
+    background-color: #141414;
+    
+}
+
+#produtosbeb p{
+    color: white;
+}
+
+#produtosbeb p{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+#produtosbeb h2{
+    color: red;
+    width: 100%;
+    font-size: 25px
+
+}
+/*--------------------------------- Bebidas end ----------------------------------------------- */
+
+
+
+/*------------------------------------- Sobremesas ---------------------------------------- */
+#produtossobre {
+    font-family: "Fjalla One";
+    position:relative;
+    float: left;
+    justify-content: right;
+    display: flex;
+    width: 50%;
+    height: 1140px;
+    background-color: #141414;
+    
+}
+
+#produtossobre p{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+#produtossobre h2{
+    color: red;
+    width: 100%;
+    font-size: 25px;
+
+}
+/*------------------------------------- Sobremesas end ---------------------------------------- */
+
+
+/*------------------------------------- Cervejas ---------------------------------------- */
+/*------------------------------------- Cervejas end ---------------------------------------- */
+
+
+/*------------------------------------- Porcoes ---------------------------------------- */
+#produtospor {
+    font-family: "Fjalla One";
+    position:relative;
+    float: left;
+    justify-content: right;
+    display: flex;
+    width: 50%;
+    height: 1100px;
+    background-color: #141414;
+    
+}
+
+#produtospor p{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+#produtospor h2{
+    color: red;
+    width: 100%;
+    font-size: 25px
+
+}
+    
+/*------------------------------------- Porcoes end ---------------------------------------- */
+
+
+/*------------------------------------- Combos ---------------------------------------- */
+#produtoscom {
+    font-family: "Fjalla One";
+    position:relative;
+    float: left;
+    justify-content: right;
+    display: flex;
+    width: 50%;
+    height: 1050px;
+    background-color: #141414;
+
+    
+}
+
+#produtoscom p{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+#produtoscom h2{
+    color: red;
+    width: 100%;
+    font-size: 25px
+}
+/*------------------------------------- Combos end ---------------------------------------- */
+
+/* Carrinho de Compras */
+/* .cd-cart__trigger,
+.cd-cart__content {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  transition: transform .2s;
+}
+
+.cd-cart--empty .cd-cart__trigger,
+.cd-cart--empty .cd-cart__content { /* hide card */
+  /* transform: translateY(150px);
+} */
+
+.cd-cart__layout {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    height: 72px;
+    width: 72px;
+    border-radius: var(--radius);
+    transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
+    transition-timing-function: cubic-bezier(.67,.17,.32,.95);
+    background: var(--cd-color-3);
+    box-shadow: 0 4px 30px rgba(#000, .17);
+  }
+  
+  .cd-cart--open .cd-cart__layout {
+    height: 100%;
+    width: 100%;
+    transition-delay: 0s;
+  }
+
+  .cd-cart__product--deleted {  /* this class is added to an item when it is removed form the cart */
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    animation: cd-item-slide-out .3s forwards;
+  }
+  
+  @keyframes cd-item-slide-out {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(80px);
+      opacity: 0;
+    }
+  } */
+/* Carrinho de Compras */
+
+
+/*------------------------------- Paleta de cores do Adobe Color -------------------------------- */
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #000000; }
+.My-Color-Theme-2-hex { color: #141414; }
+.My-Color-Theme-3-hex { color: #A1A19F; }
+.My-Color-Theme-4-hex { color: #ADADAC; }
+.My-Color-Theme-5-hex { color: #878786; }
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(0, 0, 0, 1); }
+.My-Color-Theme-2-rgba { color: rgba(20, 20, 20, 1); }
+.My-Color-Theme-3-rgba { color: rgba(161, 161, 159, 1); }
+.My-Color-Theme-4-rgba { color: rgba(173, 173, 172, 1); }
+.My-Color-Theme-5-rgba { color: rgba(135, 135, 134, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(0, 0, 0, 1); }
+.My-Color-Theme-2-hsla { color: hsla(0, 0, 7, 1); }
+.My-Color-Theme-3-hsla { color: hsla(60, 1, 62, 1); }
+.My-Color-Theme-4-hsla { color: hsla(60, 0, 67, 1); }
+.My-Color-Theme-5-hsla { color: hsla(60, 0, 52, 1); }
+
+/*------------------------------- Paleta de cores do Adobe Color end -------------------------------- */

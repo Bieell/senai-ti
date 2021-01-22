@@ -1,0 +1,541 @@
+* {
+    margin: 0px;
+    padding: 0;
+} 
+
+body {
+    margin: 0%;
+}
+
+#tracado{
+    height: 20px;
+    background-color: black;
+    
+}
+
+/*----------------------------- Cabeçalho -----------------------------------*/
+
+header {
+    display: flex;
+    margin: 0%;
+
+}
+
+
+#carrinhodiv{
+    margin-top:105px;
+    width: 20%;
+    height: 250px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align:right;
+    /* background-color: pink */
+}
+
+#carrinhodiv a:link, a:visited, a:active {
+    text-decoration: none;
+    color:white;
+    
+	}
+#carrinhodiv a:hover {
+    margin: 0px;  
+    padding: 0px;
+	color:white; 
+    }
+
+#carrinho{
+    width: 60px;
+    height: 50px;
+    margin-left: 210px;
+}
+
+#center {
+    display: flex;
+    height: 250px;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    justify-content:center;
+    /* background-color:blue; */
+}
+#silvers{
+    /* background-color: yellow; */
+    text-align:center;
+
+}
+#logoimg {
+    margin-top: 5px;
+    width:200px;
+    margin-bottom: 0%;
+}
+
+#contatos a:link, a:visited, a:active {
+    text-decoration: none;
+    color:white;
+	}
+#contatos a:hover {
+    margin: 0px;  
+    padding: 0px;
+	color:white; 
+    }
+
+#lambretadiv {
+    display:absolute;
+    width: 42%;
+    height: 250px;
+    /* background-color: red; */
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+#lambreta {
+    width: 52px;
+    height: 38px;
+    margin-top: -120px;
+    margin-bottom: 20px;
+    margin-left: 430px;
+    
+}
+/* 
+#complet {
+    width: 20%;
+    display:flex;
+    height: 250px;
+    background-color: beige */
+/* } */
+
+#contatos {
+    margin-top:120px;
+    width: 22%;
+    display:flex;
+    height: 50px;
+    /* background-color: green; */
+}
+
+#facebookheader {
+    width: 25%;
+}
+#instagramheader {
+    width: 25%;
+    margin-left: -60%
+
+
+}
+#emailheader {
+    width: 30%;
+    margin-left: -120%
+}
+
+.delivtext {
+    margin-top: 120px;
+    margin-left:230px;
+    /* text-align: right; */
+}
+/* -----------------------------Barra de Navegação------------------------- */
+
+#nav_bar {
+    margin: 0%;
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-family: 'Montserrat';
+    background-color: black;
+}
+
+
+#nav_bar a:link, a:visited, a:active {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+	}
+#nav_bar a:hover {
+    margin: auto;
+    text-decoration: underline;  
+	color:white; 
+	font-size:140%; 
+    }
+
+/* -----------------------------Carousel Imagens--------------------------- */
+
+.slideshow-container a:link, a:visited, a:active {   
+    text-decoration: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#bqt {
+    max-width: 100%;   /* Máximo da largura da imagem */
+    width: 100%;
+      /* Máximo da altura da imagem */
+    min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+
+#bbc {
+    max-width: 100%;   /* Máximo da largura da imagem */
+    width: 100%;
+      /* Máximo da altura da imagem */
+    min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+#slc {
+    max-width: 100%;   /* Máximo da largura da imagem */
+    width: 100%;
+    max-height: 500px;  /* maximo de largura da imagen */
+    min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+/* ---------------------------------Grid2---------------------------------- */
+
+section {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Ubuntu";
+}
+
+#section a:link, a:visited, a:active {   
+    text-decoration: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* --------------------------------Hamburguers----------------------------- */
+
+.hamburguer {
+    width: 330px;
+    height: 560px; 
+    order: 1;
+    border: 7px solid;
+    background-color:rgb(97, 60, 60);
+ border-color: black; 
+ }
+
+
+.hamburguer h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 2px;
+}
+
+.hamburguer h3 {
+    color:black;
+    text-align: center;
+    margin: 0px;
+    line-height:30px;
+
+}
+
+.hamburguer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10% ;
+    margin-bottom: 0px;
+    width: 250px;
+    height: 250px;
+}
+
+/* ---------------------------------Cervejas------------------------------- */
+
+.cervejas {
+    width: 330px;
+    height: 560px; 
+    order: 1;
+    border: 7px solid;
+    background-color: rgb(57, 87, 57);
+    border-color: black;
+}
+
+.cervejas h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+.cervejas h3 {
+    
+    text-align: center; 
+    line-height: 27px; 
+    margin:0px;  
+    
+}
+
+.cervejas img {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left: 14% ;
+    
+    width: 250px;
+    height: 250px;
+}
+
+
+/* -----------------------------------Porções------------------------------ */
+
+.porcoes {
+    width: 330px;
+    height: 560px;  
+    order: 1;
+    border: 7px solid;
+    background-color:rgb(107, 92, 65);
+    border-color: black;
+      
+}
+.porcoes h1 {
+    display: flex;
+    justify-content: center;
+}
+.porcoes h3 {
+    margin: 1%;
+    text-align: center; 
+}
+
+.porcoes img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10% ;
+    margin-bottom: 0px;
+    width: 250px;
+    height: 250px;
+}
+
+/* --------------------------------Sobremesas------------------------------- */
+
+.sobremesas {
+    width: 330px;
+    height: 560px; 
+    order: 1;
+    border: 7px solid;
+    background-color:rgb(80, 58, 80);
+ border-color: black;
+}
+
+.sobremesas h1{
+    display: flex;
+    justify-content: center;
+}
+
+.sobremesas h3 {
+text-align: center;
+margin: 20px;
+}
+.sobremesas img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10% ;
+    margin-bottom: 0px;
+    width: 250px;
+    height: 250px;
+}
+
+/* ------------------------------Separador-------------------------------- */
+
+#separador {
+    width: 100%;
+    margin-bottom:-4%;
+    margin-top: 60px;    
+    }    
+
+
+/*---------------------------------Rodapé------------------------------------*/    
+
+footer{
+    /* margin-top: 50px; */
+    display: flex;
+    background-color:#141414;
+    height: 690px;
+    width: 100%;
+    margin-bottom: 0px;  
+    justify-content: center;
+    align-items: center;
+    
+} 
+  
+
+/* div */
+#logo_esq{
+width: 100%;
+height: 250px;
+/* background-color: yellow; */
+text-align:center;
+margin-bottom: 300px;
+        
+}
+
+#sbfooter {
+    float: bottom;
+    text-align: center;
+    width: 50%;
+    height: 105px;
+    /* background-color: blue; */
+    margin-left: 25%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#sbfooter h2 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color:white;
+}
+
+#sbfooter2 {
+    float: left;
+    text-align: right;
+    width: 25%;
+    height: 130px;
+    /* background-color: blue; */
+    margin-left: 25%;
+    color: white;
+}
+
+#sbfooter2 h2 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color:white;
+}
+#sbfooter2 p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color:white;
+
+}
+
+#sbfooter3 {
+    float: left;
+    text-align: left;
+    width: 25%;
+    height: 130px;
+    /* background-color: blue; */
+    color: white;
+    margin-left: 20px;
+}
+
+#sbfooter3 h2 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color:white;
+}
+
+#sbfooter3 p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color:white;
+}
+#sbfooter4 {
+    float: left;
+    text-align: center;
+    width: 80%;
+    height: 70px;
+    /* background-color: blue; */
+    margin-left: 150px;
+    color: white;
+}
+#sbfooter4 h2 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color:white;
+}
+#sbfooter4 p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color:white;
+}
+
+/* -----------------------------Barra de Navegação2-------------------------- */
+
+#asemfronteiras {
+    margin-left:0%;
+    padding-left:0%;    
+    }
+    
+#nav_bar2 {
+    margin: 0%;
+    display:flex;
+    list-style:none;
+    justify-content: left;
+    height: 50px;
+    align-items: center;
+    font-family: 'Fjalla One';
+    background-color: black;   
+    margin-bottom: 0%;
+    width: 100%;
+    }
+    
+    #nav_bar2 a:link, a:visited, a:active {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        }
+        
+    #nav_bar2 a:hover {
+        margin: auto;
+        text-decoration: underline;  
+        color:white; 
+        }
+
+#contatosfooter {
+    display:flex;
+    height:30px;
+    width:100%;
+    background-color: blue;
+    justify-content: flex-start;
+    margin-left: 350px;
+}
+    #facebookfooter {
+        width: 30px;
+        height: 30px;
+    }
+    #instagramfooter {
+        width: 30px;
+        height: 30px;
+    }
+    #emailfooter {
+        width: 35px;
+        height: 25px;
+        margin-bottom: 2px;
+    }
+
+    .biel a:link, a:visited, a:active {
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        
+        }
+        
+    .biel a:hover {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+}
+        
+
+/*------------------------------- Paleta de cores do Adobe Color -------------------------------- */
+.My-Color-Theme-4-rgba { color: rgba(173, 173, 172, 1); }
+.My-Color-Theme-5-rgba { color: rgba(135, 135, 134, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(0, 0, 0, 1); }
+.My-Color-Theme-2-hsla { color: hsla(0, 0, 7, 1); }
+.My-Color-Theme-3-hsla { color: hsla(60, 1, 62, 1); }
+.My-Color-Theme-4-hsla { color: hsla(60, 0, 67, 1); }
+.My-Color-Theme-5-hsla { color: hsla(60, 0, 52, 1); }
+/*------------------------------- Paleta de cores do Adobe Color end -------------------------------- */
