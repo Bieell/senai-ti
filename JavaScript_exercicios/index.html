@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios FPOO - Materia Lima</title>
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <h2 style=" font-family: 'Bungee Outline', cursive; color: white; text-shadow:rgb(0, 0, 255) 0.1em 0.1em 0.5em; font-size: 40px;">LIMA - Exércicios de FPOO</h2>
+    <main>
+        <!--------------------------------- Celsius para Fahrenheit ----------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Celsius para Fahrenheit</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="celsius" placeholder="Digite a temperatura em ºC;"> ºC<br>
+                <button class="button" onclick="calculoCelsius()">Enviar</button>
+            </div>
+            <div class="resultadocss">
+                Resultado <span style="color:white" id="resultCelsius"> </span>
+            </div>
+        </div>
+        <!----------------------------------------- Calculadora --------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Calculadora</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="num1" placeholder="Digite um número"> <br>
+                <input class="input" style="margin-top: 1px" type="number" id="num2" placeholder="Digite um número">
+                <br>
+                <button class="button" onclick="calcular(event)">+</button>
+                <button class="button" onclick="calcular(event)">-</button>
+                <button class="button" onclick="calcular(event)">*</button>
+                <button class="button" onclick="calcular(event)">/</button>
+            </div>
+            <div class="resultadocss">Resultado <span style="color:white" id="resultado"></span></div>
+        </div>
+
+        <!----------------------------------------- Par e Impar --------------------------------------->
+
+        <div class="grids">
+            <div class="titulo">
+                <h2>Par e impar</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="num" placeholder="Digite um número"> <br>
+                <button class="button" onclick="calcularpar(event)">Par ou Impar?</button>
+            </div>
+            <div class="resultadocss">Resultado<span style="color:white" id="par_impar_resultado"></span></div>
+        </div>
+        <!----------------------------------------- Fatorial --------------------------------------->
+
+        <div class="grids">
+            <div class="titulo">
+                <h2>Calculo Fatorial</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="numfatorial" placeholder="Digite um número">! <br>
+                <button class="button" onclick="calcFatorial(event)">Calcular Fatorial</button>
+            </div>
+            <div class="resultadocss">Resultado <span style="color:white" id="resultfatorial"></span></div>
+        </div>
+        <!------------------------------------- Conversor de moedas------------------------------------>
+        <div class="grids">
+            <div class="titulo">
+                <h2>Conversor de moedas</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="numconversor" placeholder="Digite o valor a ser convertido">
+                <input class="input" type="number" id="numconversor2" placeholder="Cotação da moeda a ser convertida">
+                <button class="button" onclick="conversor()">Converter</button>
+            </div>
+            <div class="resultadocss"> Resultado <span style="color:white" id="resultconversor"></span></div>
+        </div>
+        <!----------------------------------------- Triângulo --------------------------------------->
+        <div class="grids" style="height: 210px">
+            <div class="titulo">
+                <h2>Tipo de triângulo</h2>
+            </div>
+            <div class="meio" style="margin-bottom: 15px;">
+                <input class="input" type=number id="numtriangulo" placeholder="Primeiro lado do triângulo">
+                <input class="input" type=number id="numtriangulo2" placeholder="Segundo lado do triângulo">
+                <input class="input" type=number id="numtriangulo3" placeholder="Terceiro lado do triângulo">
+                <button class="button" onclick="triangulo()">Calcular tipo de triângulo</button>
+            </div>
+            <div class="resultadocss"> Resultado<span style="color:white" id="resultadotriangulo"></span></div>
+        </div>
+        <!-------------------------------------------- IMC -------------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>IMC</h2>
+            </div>
+            <div class="meio">
+                <input style="margin-bottom: 2px; width: 70%" class="input" type="number" id="peso"
+                    placeholder="Digite seu peso em kg"><span> kg</span>
+                <input style="width: 70%" class="input" type="number" id="altura" placeholder="Digite sua altura"
+                    style="margin-left: 2px;"><span>
+                    cm</span>
+                <button class="button" onclick="imc()">Calcular seu IMC</button>
+            </div>
+            <div class="resultadocss">Resultado <span style="color:white" id="resultadoIMC"></span></div>
+        </div>
+        <!------------------------------------------- Verificar Primo --------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Verificar se o número é "primo"</h2>
+            </div>
+            <div class="meio">
+                <input style="margin-bottom: 5px" class="input" type="number" id="numprimo"
+                    placeholder="Digite um número"> <br>
+                <button class="button" onclick="verificarPrimo()">Verificar</button>
+            </div>
+            <div class="resultadocss"> Resultado <span style="color:white" id="verifprimo"></span></div>
+        </div>
+        <!------------------------------------------- Listagem --------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Listagem de Nº números primos:</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="numlistprimo" placeholder="Último número Primo">
+                <button class="button" onclick="verificarprimolist()">Listar Números Primos</button><br>
+                <p style="margin-top: 6px">(Lista até o número que você colocar na caixa acima)</p>
+            </div>
+            <div class="resultadocss">Resultado<span style="color:white" id="resultlistprimo"></span></div>
+        </div>
+        <!------------------------------------------- Conversão --------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Conversor de decimal para binário</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="number" id="numDec" placeholder="Digite o valor decimal a ser convertido">
+                <br>
+                <button class="button" onclick="conversorDectoBin()">Converter</button>
+            </div>
+            <div class="resultadocss"> Resultado <span style="color:white" id="resultBin"></span></div>
+        </div>
+        <!------------------------------------------- CPF --------------------------------------->
+        <div class="grids">
+            <div class="titulo">
+                <h2>Verificar Estados do CPF</h2>
+            </div>
+            <div class="meio">
+                <input class="input" type="text" id="cpf" placeholder="12345678900" maxlength="11"><br>
+                <button class="button" onclick="verificarCpf()">Verificar</button>
+            </div>
+            <div class="resultadocss">
+                Resultado <span style="color:white" id="resultcpf"> </span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
