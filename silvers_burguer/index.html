@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvers Burguer</title>
+    <link rel="stylesheet" href="./main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Fjalla+One&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./carousel.css">
+    <link rel="sortcut icon" href="./Imagens/SilversBurguer.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id=tracado></div>
+<!-- Logo e Header -->
+    <header>
+        <div id= "center">
+            <div id = "lambretadiv">
+                <div class = delivtext>
+                    <h2>Delivery</h2><p>(11) 4002-8922</p>
+                </div>
+                <img id = "lambreta" src="./Imagens/delivery.png" alt = "Delivery">
+            </div>
+            <div id= "silvers">
+                <a href="./index.html"> <img id="logoimg" src="./Imagens/SilversBurguer.png" alt="logo"></a>
+                </div>
+                <div id = "contatos">
+                    <a href="//www.facebook.com" target="_blank"><img id = "facebookheader" src="./Imagens/Facebook.png" alt = "Facebook"></a>
+                    <a href="//www.instagram.com" target="_blank"><img id = "instagramheader" src="./Imagens/Instagram.png" alt = "Instagram"></a>
+                    <a href="mailto:contato@SilversBurguer.com?Subject=Silvers%Burguer" target="_top"><img id = "emailheader"src="./Imagens/email.png" alt = "Email"></a>
+                </div>
+            <div id="carrinhodiv">   
+                <a href="./carrrrrrrinho.html"><img id="carrinho" src="./Imagens/carrinho1.png" alt="carrinho de compras"></a>
+            </div> 
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav id=nav_bar>
+        <li id=link1>
+            <em><a href="./index.html">HOME</a></em>
+        </li>
+
+        <li id=link2>
+            <em><a href="./index.html#section">DESTAQUES</a></em>
+        </li>
+
+        <li id=link3>
+            <em><a href="./cardapio.html">CARDÁPIO</a></em>
+        </li>
+
+        <li id=link4>
+            <em><a href="./quem_somos_nos.html">QUEM SOMOS NÓS</a></em>
+        </li>
+
+        <li id=link4>
+            <em><a href="./index.html#footer">CONTATOS</a></em>
+        </li>
+    </nav>
+
+
+    <!-- GRID DE ANIMAÇÃO  -->
+    <!-- SLIDER DE DESTAQUES -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <a href = "./cardapio.html#ofertas"><img  id="bqt" src="./Imagens/bqt.jpg"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <a href = "./cardapio.html#ofertas"><img id="slc" src="./Imagens/bbc.jpg"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <a href = "./cardapio.html#ofertas"><img id="bbc" src="./Imagens/slc.jpg"></a>
+        </div>
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+    </div>-
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 15000); // Change image every 10 seconds
+        }
+    </script>
+    <br><br><br><br>
+
+<!-------------------------------- Grid Cardápio ----------------------------->
+    <section id = "section">
+
+<!--------------------------------- Hamburguer ------------------------------->
+        
+        <div class="hamburguer">
+            <h1>Hamburguers</h1>
+            <br>
+            <a href = "./cardapio.html"><img src="./Imagens/hamburguer2.png" alt="Hamburguer"></a>
+            <div id="text_hamburguers">
+                <br>
+                <h3>Hamburguers de alta qualidade, feito pela nossa equipe, artesanalmente!
+                    Com muitas expecificações e uma explosão de sabores, de bacon, queijo cheddar e um suculento
+                    hamburguer bovino de 150g.</h3>
+            </div>
+        </div>
+
+<!--------------------------------- Cervejas --------------------------------->
+
+        <div class="cervejas">
+            <div>
+                <h1>Cervejas Artesanais</h1>
+                <br><br>
+                <a href = "./cervejas.html"><img src="./Imagens/Cerveja.png" alt="cerveja"></a>
+                <h3>Cervejas cuidadosamente preparadas, com um gosto exótico, da melhor qualidade!
+                    Todas as nossas cervejas contam com indicadores de: Região, família, estilo, Cor, amargor e
+                    outros que irão te ajudar a escolher as opções que mais agradam o seu paladar.
+                </h3>
+            </div>
+        </div>
+
+<!-------------------------------- Porções ----------------------------------->
+        
+        <div class="porcoes">
+            <h1>Porções</h1>
+            <br>
+
+            <a href = "./porcoes.html"><img src="./Imagens/porcao.png" alt="Porçoes"></a>
+            <br>
+
+            <h3> Diversas porções, que você pode escolher, para acompanhar sua cerveja artesanal
+                e se deliciar, antes de saborear seu lanche!
+                Porçoes de: Batata, Mandioca, Camarão, Frango a passarinho, Torresmo, Calabresa Acebolada, Carne
+                Seca e outras opções em nosso cardapio!
+            </h3>
+        </div>
+
+<!-------------------------------- Sobremesas -------------------------------->
+        <div class="sobremesas">
+            <h1>Sobremesas</h1>
+            <br>
+            <a href = "./sobremesas.html"><img src="./Imagens/sobremesa.png" alt="sobremesa"></a>
+            <h3>Possuimos diversas sobremesas, para finalizar o seu combo e se deliciar, temos de sorvetes á doces
+                caseiros
+                como: Bolos, Brigadeiro, Mousses (Diversos), Brownie, Cookies, Donuts e outras opções em nosso
+                cardapio!
+            </h3>
+        </div>
+    </section>
+
+<!--------------------------------Rodapé---------------------------------->
+
+    <img id="separador" src="./Imagens/separador.jpg" alt="separador">
+    <footer id = "footer">
+        <div id=logo_esq>
+            <a href="./index.html"> <img id="logoimg" src="./Imagens/SilversBurguer.png" alt="logo"></a>    
+            <br><br>
+            <div id = "sbfooter">
+                <h2>Silvers Burguer, uma hamburgueria gourmet com pães artesanais (fermentação natural) tradicional, gergelim, italiano, australiano e de cebola, 
+                    feitas pelos nossos chefes.Além disso, todos os itens que compõem os hambúrgueres 
+                    são frescos e de excelente qualidade. </h2>
+            </div>
+            <div id = "sbfooter2"> 
+                <h2><strong>DELIVERY (11) 4002-8922</strong><h2>
+                    <p>Em Período de Atendimento Normal:
+                    de Segunda a Sábado das 12h Às 16h00 e
+                    das 17h Às 23h00.</p>
+            </div>
+            <div id = "sbfooter3"> 
+                <h2><strong>Rua John Redford</strong><h2>
+                    <p>Centro de São Paulo - SP</p>
+            </div>
+            <div id = "sbfooter4"> 
+                <h2><strong>Horário de Atendimento</strong><h2>
+                    <p>(EM PERÍODO DE ATENDIMENTO NORMAL)
+                DE SEGUNDA A SÁBADO DAS 12H ÀS 15H E DAS 18H ÀS 23H</p>
+            </div>
+        </div>
+
+
+</footer>
+
+<!------------------ Barra de Navegação FOOTER-------------------------------->
+    
+    <nav id=nav_bar2>
+        <div>
+       <a class = "biel" href="//www.facebook.com" target="_blank"><img id = "facebookfooter" src="./Imagens/Facebookinvert.png" alt = "Facebook"></a>
+        <a class = "biel" href="//instagram.com" target="_blank"><img id = "instagramfooter" src="./Imagens/Instagraminvert.png" alt = "Instagram"></a>
+        <a class = "biel" href="mailto:contato@SilversBurguer.com?Subject=Silvers%Burguer" target="_top"><img id = "emailfooter" src="./Imagens/emailinvert.png" alt = "E-mail"></a>
+        </div>
+        <li id=link1>
+            <a href="./index.html">HOME</a>
+        </li>
+
+        <li id=link2>
+            <a href="./index.html#section">DESTAQUES</a>
+        </li>
+
+        <li id=link3>
+            <a href="./cardapio.html">CARDÁPIO</a>
+        </li>
+
+        <li id=link4>
+            <a href="./quem_somos_nos.html">QUEM SOMOS NÓS</a>
+        </li>
+
+        <li id=link4>
+            <a href="./index.html#footer">CONTATOS</a>
+        </li>
+</div>    
+</nav>
+</body>
+</html>
