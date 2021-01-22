@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz de Minecraft</title>
+    <link rel="stylesheet" href="./styles/main.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="creeper" src="./images/minecraft-creeper-face.jpg" alt="creeper_logo">
+        <h1>Quizz Minecraft - Você realmente conhece o jogo?</h1> 
+    </header>
+    <main id="grid">
+        <div id="card1" class="cards"></div>
+        <div id="card2" class="cards"></div>
+        <div id="card3" class="cards"></div>
+        <div id="card4" class="cards"></div>
+        <div id="card5" class="cards"></div>
+        <div id="card6" class="cards"></div>
+        <div id="card7" class="cards"></div>
+        <div id="card8" class="cards"></div>
+        <div id="card9" class="cards"></div>
+        <div id="card10" class="cards"></div>
+    </main> 
+     
+    <div id="containerUsuario" class="flexCenter">
+        <input id="usuario" type="text" placeholder="Insira seu nickname.">   
+    </div>
+    <div id="enviarButton" class="flexCenter">
+        <button onclick="enviaResposta()" class="buttonStyle">Enviar Respostas</button>
+    </div>
+
+    <div class="flexCenter">
+        <span id="pontuacaoFinal" class="scoreStyle">
+            <h1>Sua pontuação total foi:</h1><h1>0 pontos!</h1>
+        </span>
+    </div>
+
+    <div class="flexCenter" >
+        <span id="recordAtual" class="scoreStyle"></span>
+    </div>
+    <div id="enviarButton" class="flexCenter">
+        <button onclick="newRecord()" class="buttonStyle">Salvar novo Record</button>
+    </div>
+
+
+    <div id="refreshButton" class="flexCenter">
+        <button onClick="window.location.reload()" class="buttonStyle">Reiniciar Quiz</button>
+    </div>
+    <script src="./scripts/decks.js"></script>
+    <script src="./scripts/script.js"></script>  
+    <script src="./scripts/record.js"></script>  
+</body>
+</html>
